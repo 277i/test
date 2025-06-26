@@ -75,7 +75,7 @@
 
 .main {
   min-height: 100vh; /* 全屏高度 */
-  background-image: url("/images/backgroud.png");
+  background-image: url("../images/backgroud.png");
   background-position: right bottom; /* 右下角 */
   background-repeat: no-repeat; /* 不重复 */
   background-size: auto; /* 保持原图大小（默认）或自定义 */
