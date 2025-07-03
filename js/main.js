@@ -26,7 +26,7 @@ $(function () {
 
 
     function pagescrolling() {
-        <!--页面滚动内容元素动画特效-->
+    
         $('.block').smoove({offset:'20%'});
         // data-move-y="200px" data-move-x="200px" data-rotate="-45deg"
     }
@@ -273,4 +273,45 @@ $(function () {
     $(".logo").click(function () {
         window.location.href="index.html"
     })
+    $(window).scroll(function(){
+        // console.log(document.documentElement.scrollTop);
+        if(document.documentElement.scrollTop>$(".main").//offsetParent：获取带有定位的最近父元素
+        offset().top){
+            // 2
+          $(".nav2").css({
+            "position": "fixed",
+            "top":"150px",
+          })
+           $(".top1").css({
+            "display": "none"
+          })
+          $(".top2").css({
+            "display": "block"
+          })
+         
+        }else{
+          $(".nav2").css({
+            "position": "absolute",
+            "top":"50px",
+          })
+          $(".top2").css({
+            "display": "none"
+          })
+          $(".top1").css({
+            "display": "block"
+          })
+        //   $(".top").css({
+        //     "background-color": "rgba(0, 0, 0, 0.2)"
+        //   })
+        //   $(".top .nav1 li a").css({
+        //     "color": "#fff"
+        //   })
+        //   $(".top .nav3 li a").css({
+        //     "color": "rgb(204, 44, 47)"
+        //   })
+        //   $(".top .nav3 li a").css({
+        //     "color": "rgb(204, 44, 47)"
+        //   })
+        }
+      })
 })
