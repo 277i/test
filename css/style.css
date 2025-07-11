@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* ----------------
+	公共样式开始
+----------------- */
+/*长页面滚轮*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;	
+}
+.swiper-slide{
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.page-L {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.page-L::-webkit-scrollbar{
+	display: none;
+}
+
+img{display: block;margin: 0 auto;max-width: 100%;}
+/*中间内容*/
+.main{
+	box-sizing: border-box;
+	padding-top: 0.01rem;
+	padding-bottom: 0;
+	/*此处 padding-bottom 大小要和底部footer等高*/
+}
+.main .top{
+
+}
+.main .top .banner{
+	width: 100%;
+}
+.main .title{
+	margin: 0.6rem auto 0.4rem;
+}
+.main .title img{
+	height: 0.92rem;
+}
+.main .info{
+	padding: 0.1rem 0;
+	margin: 0 0.55rem;
+	color: #264764;
+}
+.info .tit{
+	width: 2.91rem;
+	margin: 0.7rem auto 0.4rem;
+}
+
+.info .txt{
+	line-height: 0.4rem;
+	font-size: 0.22rem;
+	height: 12rem;
+	color: #264764;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.txt video{
+	width: 100%;
+}
+.txt .te{
+	text-align: center;
+}
+
+.nav{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1.26rem;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #083e89;
+}
+.nav li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0.86rem;
+	height: 0.97rem;
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+}
+.nav li.on{
+	font-weight: bold;
+	background-color: #1990d4;
+}
+/*尾部*/
+.footer{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 0.15rem;
+	position: absolute;
+	bottom: 0;
+}
+.footer img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	width: 0.2rem;
+}
+/* ----------------
+	公共样式结束
+----------------- */
+/* ----------------
+	各页面背景图
+----------------- */
+#s0{
+	background: url(../images/indexBg.png) no-repeat top center/100% 100%;
+}
+
+#s1,#s2,#s3,#s4,#s5,#s6,#s7{
+	background: url(../images/mainBg.png) no-repeat top center/100% 100%;
+}
+
+
+/* ----------------
+	各页面背景图
+----------------- */
+/* ----------------
+	引导页s0开始
+----------------- */
+#s0 .top{
+	padding: 0.43rem 0.48rem 0;
+}
+#s0 .top .logo{
+	width: 2.21rem;
+	margin: 0;
+}
+#s0 .slogan img{
+	width: 6.59rem;
+	margin: 0.67rem auto 0;
+}
+#s0 .enter1 img{
+	width: 2.86rem;
+	margin: 1.4rem auto 0;
+}
+/* ----------------
+	引导页s0结束
+----------------- */
+/* ----------------
+	集团简介s1开始
+----------------- */
+#s1 .info{
+	margin: -0.25rem 0.42rem 0;
+}
+#s1 .info .txt{
+	height: 11rem;
+	font-size: 0.24rem;
+}
+/* ----------------
+	集团简介s1结束
+----------------- */
+/* ----------------
+	公司简介s2开始
+----------------- */
+#s2 .jt{
+	display: flex;
+	justify-content: space-between;
+}
+#s2 .jt .jg{
+	width: 2.87rem;
+	min-height: 0.44rem;
+	line-height: 0.44rem;
+	font-size: 0.21rem;
+	color: #005eb2;
+	text-align: center;
+	background-color: #ffffff;
+	border: 0.01rem solid #005eb2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#s2 .jt .jg.jts{
+	font-weight: bold;
+	color: #fff;
+	background-image: url('../images/com_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#s2 .text1{
+	line-height: .36rem;
+	margin: 0.24rem 0;
+}
+#s2 .text1 p{
+	text-indent: 2em;
+	text-align: justify;
+}
+#s2 .text1 p span{
+	font-weight: bold;
+	color: #1669bc;
+}
+/* ----------------
+	公司简介s2结束
+----------------- */
+#s3 .info{
+	margin: 0;
+}
+/* ----------------
+	公司官网s7开始
+----------------- */
+#s7 .txt h2{
+	height: 0.58rem;
+	line-height: 0.58rem;
+	font-size: 0.22rem;
+	color: #fff;
+	letter-spacing: 0.008rem;
+	padding-left: 0.16rem;
+	margin: 0.16rem 0;
+	border: 0.02rem solid #2b64ae;
+	background: linear-gradient(to bottom,#85d5f8,#257bd3);
+}
+#s7 .zong{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	line-height: 0.47rem;
+	font-size: 0.2rem;
+	margin-bottom: 0.3rem;
+}
+#s7 .zong p:nth-of-type(odd){
+	width: 52%;
+}
+#s7 .zong p:nth-of-type(even){
+	width: 48%;
+}
+#s7 .zong p:last-of-type{
+	width: 100%;
+}
+#s7 .zong p img{
+	display: inline-block;
+	width: 0.2rem;
+	margin-right: 0.08rem;
+	vertical-align: middle;
+}
+#s7 .zong p b{
+	color: #264764;
+}
+
+#s7 .zi{
+	line-height: 0.47rem;
+	font-size: 0.26rem;
+}
+
+#s7 .con div{
+	height: 2.67rem;
+	border-radius: 5px;
+	border: 0.01rem solid #ffffff;
+	margin-top: 0.28rem;
+}
+#s7 .con div h3{
+	min-height: 0.66rem;
+	line-height: 0.66rem;
+	font-size: 0.22rem;
+	color: #fff;
+	letter-spacing: 0.008rem;
+	padding-left: 0.3rem;
+	padding-right: 0.17rem;
+	margin-bottom: 0.2rem;
+	border-radius: 5px;
+	border: 0.02rem solid #2b64ae;
+	/*box-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.5);*/
+	background: linear-gradient(to bottom,#85d5f8,#257bd3);
+}
+#s7 .con div h3 img{
+	float: right;
+	width: 0.35rem;
+	vertical-align: middle;
+	margin-top: 0.16rem;
+}
+#s7 .con div p{
+	line-height: 0.4rem;
+	margin-left: 0.24rem;
+}
+#s7 .con div p b{
+	color: #264764;
+}
+/* ----------------
+	公司官网s7结束
+----------------- */
+
+input::-webkit-input-placeholder {
+	color: #ffffff;
+}
